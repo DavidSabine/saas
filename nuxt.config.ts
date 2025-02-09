@@ -10,7 +10,6 @@ export default defineNuxtConfig({
 		preference: 'light',
 	},
 	compatibilityDate: '2024-07-11',
-
 	devtools: {
 		enabled: false,
 	},
