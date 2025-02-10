@@ -3,13 +3,14 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
-		"lint": "eslint .",
-		"typecheck": "nuxt typecheck"
+		"build": "nuxi build",
+		"dev": "nuxi dev",
+		"done": "pnpm lint && pnpm typecheck && pnpm build",
+		"generate": "nuxi generate",
+		"preview": "nuxi preview",
+		"postinstall": "nuxi prepare",
+		"lint": "pnpm biome format",
+		"typecheck": "nuxi typecheck"
 	},
 	"dependencies": {
 		"@iconify-json/heroicons": "1.2.2",
@@ -24,9 +25,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@nuxt/eslint": "0.7.5",
 		"@nuxthq/studio": "2.2.1",
-		"eslint": "9.19.0",
 		"vue-tsc": "2.1.10"
 	},
 	"resolutions": {

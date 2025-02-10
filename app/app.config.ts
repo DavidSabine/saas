@@ -1,7 +1,7 @@
 export default defineAppConfig({
 	ui: {
-		primary: 'sky',
-		gray: 'cool',
+		primary: 'apexBlue',
+		gray: 'apexGray',
 		button: {
 			rounded: 'rounded-full',
 			default: {

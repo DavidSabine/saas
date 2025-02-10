@@ -1,10 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	app: {
-		head: {
-			link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
-		},
-	},
 	colorMode: {
 		disableTransition: true,
 		preference: 'light',
@@ -12,14 +7,6 @@ export default defineNuxtConfig({
 	compatibilityDate: '2024-07-11',
 	devtools: {
 		enabled: false,
-	},
-	eslint: {
-		config: {
-			stylistic: {
-				commaDangle: 'never',
-				braceStyle: '1tbs',
-			},
-		},
 	},
 	extends: ['@nuxt/ui-pro'],
 	future: {
@@ -43,7 +30,6 @@ export default defineNuxtConfig({
 	},
 	modules: [
 		'@nuxt/content',
-		'@nuxt/eslint',
 		'@nuxt/fonts',
 		'@nuxt/image',
 		'@nuxt/ui',
